@@ -1,8 +1,8 @@
 <?php
 
-namespace Application\core;
+namespace App\core;
 
-use Application\models\Users;
+use App\models\Users;
 
 /**
 * Descricao: Esta classe é responsável por instanciar um model e chamar a view correta
@@ -22,8 +22,8 @@ class Controller
   * @param  string  $model   É o model que será instanciado para usar em uma view, seja seus métodos ou atributos
   */
   public function model($model) {
-    require '../Application/models/' . $model . '.php';
-    $classe = 'Application\\models\\' . $model;
+    require '../App/models/' . $model . '.php';
+    $classe = 'App\\models\\' . $model;
     return new $classe();
 
   }
@@ -35,7 +35,7 @@ class Controller
   * @param  array   $data   São os dados que serão exibido na view
   */
   public function view(string $view, $data = []) {
-    require '../Application/views/' . $view . '.php';
+    require '../App/views/' . $view . '.php';
 
   }
 

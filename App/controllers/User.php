@@ -1,6 +1,6 @@
 <?php
 
-use Application\core\Controller;
+use App\core\Controller;
 
 /**
  * Descricao: Classe controladora da tela principal de entrada

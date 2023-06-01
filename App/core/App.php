@@ -21,8 +21,8 @@ class App
     public function __construct() {
         $URL_ARRAY = $this->parseUrl();
         $this->getControllerFromUrl($URL_ARRAY);
-        $this->getMethodFromUrl($URL_ARRAY);
-        $this->getParamsFromUrl($URL_ARRAY);
+        // $this->getMethodFromUrl($URL_ARRAY);
+        // $this->getParamsFromUrl($URL_ARRAY);
         // chama um método de uma classe passando os parâmetros
         call_user_func_array([$this->controller, $this->method], $this->params);
     }
@@ -40,20 +40,21 @@ class App
 
     /**
      * Este método verifica se o array informado possui dados na psoição 0 (controlador)
-     * caso exista, verifica se existe um arquivo com aquele nome no diretório Application/controllers
+     * caso exista, verifica se existe um arquivo com aquele nome no diretório App/controllers
      * e instancia um objeto contido no arquivo, caso contrário a variável $page404 recebe true.
      *
      * @param  array  $url   Array contendo informações ou não do controlador, método e parâmetros
      */
     private function getControllerFromUrl($url) {
         if ( !empty($url[0]) && isset($url[0]) ) {
-        if ( file_exists('../Application/controllers/' . ucfirst($url[0])  . '.php') ) {
-            $this->controller = ucfirst($url[0]);
-        } else {
-            $this->page404 = true;
+            if ( file_exists('../App/controllers/' . "Home"  . '.php') ) {
+                $this->controller = "Home";
+            } else {
+                $this->page404 = true;
+            }
         }
-        }
-        require '../Application/controllers/' . $this->controller . '.php';
+
+        require '../App/controllers/' . $this->controller . '.php';
         $this->controller = new $this->controller();
     }
 
@@ -66,13 +67,13 @@ class App
      */
     private function getMethodFromUrl($url) {
         if ( !empty($url[1]) && isset($url[1]) ) {
-        if ( method_exists($this->controller, $url[1]) && !$this->page404) {
-            $this->method = $url[1];
-        } else {
-            // caso a classe ou o método informado não exista, o método pageNotFound
-            // do Controller é chamado.
-            $this->method = 'pageNotFound';
-        }
+            if ( method_exists($this->controller, $url[1]) && !$this->page404) {
+                $this->method = $url[1];
+            } else {
+                // caso a classe ou o método informado não exista, o método pageNotFound
+                // do Controller é chamado.
+                $this->method = 'pageNotFound';
+            }
         }
     }
 
@@ -85,7 +86,7 @@ class App
      */
     private function getParamsFromUrl($url) {
         if (count($url) > 2) {
-        $this->params = array_slice($url, 2);
+            $this->params = array_slice($url, 2);
         }
     }
 

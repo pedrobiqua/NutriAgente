@@ -1,7 +1,7 @@
 <?php
 
 // Lembrar de Mudar a classe, pois vamos utilizar o MYSQL
-namespace Application\core;
+namespace App\core;
 
 use PDO;
 /**

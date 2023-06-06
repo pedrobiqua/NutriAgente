@@ -10,6 +10,7 @@ namespace App\core;
  * Data criacao: 30/05/2023
  * Data atualizacao: 30/05/2023
  * Atualizado por: Pedro Bianchini de Quadros
+ * lukas
  */
 class App
 {

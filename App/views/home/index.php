@@ -1,5 +1,15 @@
 <div class="container">
   <div style="margin:150px">
-    <h1>Construindo um simples Framework MVC com PHP</h1>
+    <h1>PÁGINA INICIAL - NUTRIAGENTE</h1>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
   </div>
 </div>

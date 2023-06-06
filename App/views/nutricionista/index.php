@@ -2,7 +2,7 @@
     <!--
         Adicionar aqui o conteúdo da view
     -->
-    <h1>Nutricionista</h1>
+    <h1>Nutricionista - DASHBOARD</h1>
     <p>TESTE TESTE TESTE TESTE</p>
 
     <button onclick="changeView()">AAAAAAAAAAAAAAAAAAAAAAA</button>

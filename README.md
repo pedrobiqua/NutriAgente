@@ -7,8 +7,14 @@ O objetivo da plataforma é para facilitar o controle e o acompanhamento nutrici
 <br>
 
 ## Estudantes
-
-Lukas Jacon Barbosa
 Pedro Bianchini de Quadros
-Marco Vinicius
+
+- [@pedrobiqua](https://github.com/pedrobiqua)
+
 Gabriel Antonio Gomes de Farias
+
+- [@gabz11](https://github.com/gabz11)
+
+Lukas Jacon Barboza
+
+- [@lukasjacon](https://github.com/lukasjacon)

@@ -21,8 +21,8 @@ class App
     public function __construct() {
         $URL_ARRAY = $this->parseUrl();
         $this->getControllerFromUrl($URL_ARRAY);
-        // $this->getMethodFromUrl($URL_ARRAY);
-        // $this->getParamsFromUrl($URL_ARRAY);
+        $this->getMethodFromUrl($URL_ARRAY);
+        $this->getParamsFromUrl($URL_ARRAY);
         // chama um método de uma classe passando os parâmetros
         call_user_func_array([$this->controller, $this->method], $this->params);
     }
@@ -34,7 +34,17 @@ class App
      */
     private function parseUrl()
     {
-        $REQUEST_URI = explode('/', substr(filter_input(INPUT_SERVER, 'REQUEST_URI'), 1));
+        $REQUEST_URI = array();
+        $stringExploded = explode('/', substr(filter_input(INPUT_SERVER, 'REQUEST_URI'), 1));
+        
+        if( !empty($stringExploded[0]) && isset($stringExploded[0]) ) {
+            if( $stringExploded[0] == 'NutriAgente' && $stringExploded[1] == 'Public' ) {
+                $REQUEST_URI = array_slice($stringExploded, 2);
+            } else {
+                $REQUEST_URI = $stringExploded;
+            }
+        }
+        
         return $REQUEST_URI;
     }
 
@@ -47,8 +57,8 @@ class App
      */
     private function getControllerFromUrl($url) {
         if ( !empty($url[0]) && isset($url[0]) ) {
-            if ( file_exists('../App/controllers/' . "Home"  . '.php') ) {
-                $this->controller = "Home";
+            if ( file_exists('../App/controllers/' . ucfirst($url[0])  . '.php') ) {
+                $this->controller = ucfirst($url[0]);
             } else {
                 $this->page404 = true;
             }

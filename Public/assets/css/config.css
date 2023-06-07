@@ -34,3 +34,12 @@
         --bs-btn-disabled-border-color: #00bf63;
         --bs-gradient: none; 
 }
+
+.borda{
+        --bs-border-opacity: 1;
+        border-color: #00bf63; 
+}
+
+.bck {
+    color: #fff !important;
+    background-color: #00bf63 !important; }

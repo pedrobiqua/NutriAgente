@@ -40,7 +40,7 @@
   ?>
     
   <footer class="fonteDosis">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <ul class="nav justify-content-center border-bottom">
       <li class="nav-item"><a href="#" class="nav-link px-2 verdeEscuro">Facebook</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 verdeEscuro">Instagram</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 verdeEscuro">Twitter</a></li>

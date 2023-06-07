@@ -2,7 +2,6 @@
 
 namespace App\core;
 
-use App\models\Users;
 
 /**
 * Descricao: Esta classe é responsável por instanciar um model e chamar a view correta
@@ -22,9 +21,15 @@ class Controller
   * @param  string  $model   É o model que será instanciado para usar em uma view, seja seus métodos ou atributos
   */
   public function model($model) {
-    require '../App/models/' . $model . '.php';
-    $classe = 'App\\models\\' . $model;
-    return new $classe();
+    try {
+      require '../App/models/' . $model . '.php';
+      $classe = 'App\\models\\' . $model;
+      return new $classe(); 
+
+    } catch (\Exception $e) {
+      echo 'Erro ao instanciar o model: ' . $e->getMessage();
+      echo $e->getMessage();
+    }
 
   }
 

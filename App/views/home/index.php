@@ -5,11 +5,11 @@
 <div class="container my-5">
   <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
     <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-      <h1 class="display-4 fw-bold lh-1 fonteIBM verdeEscuro">NutriAgente conectando nutricionistas e seus clientes</h1>
+      <h1 class="display-4 fw-bold lh-1 fonteIBM verdeEscuro"><span style = "color:#FE914D">Nutri</span><span style = "color:#80DE59">A</span>gente conectando nutricionistas e seus clientes</h1>
       <p class="lead fonteIBM">Conecte-se com o sucesso nutricional! Nossa plataforma é o elo perfeito para nutricionistas e seus clientes alcançarem juntos uma jornada de saúde transformadora.</p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-        <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro">Comece já!</button>
-        <a rel="noopener" target="_blank" href="#planos"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro">Ver planos</button></a>
+        <a href="cadastro"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro">Comece já!</button></a>
+        <a rel="noopener" href="#planos"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro">Ver planos</button></a>
       </div>
     </div>
     <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">

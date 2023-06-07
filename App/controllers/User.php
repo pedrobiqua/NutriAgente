@@ -18,9 +18,9 @@ class User extends Controller
   */
   public function index()
   {
-    // $Users = $this->model('Users'); // é retornado o model Users()
-    // $data = $Users::findAll();
-    $this->view('user/index');
+    $Users = $this->model('Users'); // é retornado o model Users()
+    $data = $Users::findAll();
+    $this->view('user/index', ['user' => $data]);
   }
 
   /**

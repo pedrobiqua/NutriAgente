@@ -14,18 +14,18 @@ use PDO;
  */
 class Database extends PDO {
   // configuração do banco de dados
-  private $DB_NAME = 'mvc_db';
-  private $DB_USER = 'postgres';
-  private $DB_PASSWORD = 'postgres';
+  private $DB_NAME = 'nutriagente_db';
+  private $DB_USER = 'root';
+  private $DB_PASSWORD = '';
   private $DB_HOST = 'localhost';
-  private $DB_PORT = 5432;
+  private $DB_PORT = 3306;
 
   // armazena a conexão
   private $conn;
 
   public function __construct() {
     // Quando essa classe é instanciada, é atribuido a variável $conn a conexão com o db
-    $this->conn = new PDO("pgsql:dbname=$this->DB_NAME;host=$this->DB_HOST;port=$this->DB_PORT;user=$this->DB_USER;password=$this->DB_PASSWORD");
+    $this->conn = new PDO("mysql:dbname=$this->DB_NAME;host=$this->DB_HOST;port=$this->DB_PORT;user=$this->DB_USER;password=$this->DB_PASSWORD");
   }
 
   /**

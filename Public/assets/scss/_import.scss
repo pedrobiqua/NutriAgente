@@ -1,4 +1,5 @@
 // 1. Incluir funções primeiro (para conseguir manipular cor, SVGs, calc, etc)
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "../../../node_modules/bootstrap/scss/functions";
 
 // 2. Sobrescreva variáveis aqui
@@ -6,6 +7,7 @@
 // 3. Incluir o restante das estilizações do Bootstrap necessários para o funcionamento
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../node_modules/bootstrap/scss/card";
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/maps";
 @import "../../../node_modules/bootstrap/scss/root";

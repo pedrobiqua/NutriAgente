@@ -1,5 +1,5 @@
 <div class="d-flex align-items-center justify-content-center m-3">
-    <h1 style="color: #00bf63;" class="fonteIBM">Login</h1>
+    <h1 style="color: #00bf63;" class="fonteIBM">Cadastro</h1>
 </div>
 <section class="w-100 p-4 d-flex justify-content-center pb-4">
     <form>
@@ -15,12 +15,20 @@
             <label class="form-label" for="form2Example2">Senha</label>
         </div>
 
-        <!-- 2 column grid layout for inline styling -->
-        <div class="row mb-4">
-            <div class="col">
-                <!-- Simple link -->
-                <a href="#!" class="verdeEscuro">Esqueceu a senha?</a>
+        <div class="form-outline mb-4">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+            <label class="form-check-label" for="flexCheck">
+                Cliente
+            </label>
             </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                Nutricionista
+            </label>
+        </div>    
+            
         </div>
 
         <!-- Submit button -->
@@ -28,7 +36,7 @@
 
         <!-- Register buttons -->
         <div class="text-center">
-            <p>Ainda não é um membro? <a href="cadastro" class="verdeEscuro">Cadastre-se</a></p>
+            <p>Já possui uma conta? <a href="login" class="verdeEscuro">Entre</a></p>
         </div>
     </form>
 </section>

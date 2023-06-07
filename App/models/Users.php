@@ -4,6 +4,9 @@ namespace App\models;
 use App\core\Database;
 use PDO;
 
+/**
+ * CLASSE DE EXEMPLO, DE COMO SE CONECTAR COM O BANCO DE DADOS E DE COMO EXTRAIR INFORMAÇÃOES
+ */
 class Users
 {
 

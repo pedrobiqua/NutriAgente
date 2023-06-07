@@ -1,20 +1,35 @@
-<div class="container">
-  <div class="d-flex align-items-center justify-content-center m-3">
-    <h1 style="color: #00bf63;" class="fonteIBM">NutriAgente conectando nutricionistas e seus clientes</h1>
-    
-  </div>
-  <div class="row marcador align-items-center">
-  <div class="col mx-auto text-center">
-    <img class="img-responsive img-fluid" src="../Public/assets/img/talking.jpg" width="50%" height="auto">
+
+
+<div class="b-example-divider"></div>
+
+<div class="container my-5">
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 fonteIBM verdeEscuro">NutriAgente conectando nutricionistas e seus clientes</h1>
+      <p class="lead fonteIBM">Conecte-se com o sucesso nutricional! Nossa plataforma é o elo perfeito para nutricionistas e seus clientes alcançarem juntos uma jornada de saúde transformadora.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro">Comece já!</button>
+        <a rel="noopener" target="_blank" href="#planos"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro">Ver planos</button></a>
+      </div>
+    </div>
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
+        <img class="rounded-lg-3" src="../Public/assets/img/talking.jpg" alt="Consulta" >
+    </div>
   </div>
 </div>
-  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center justify-content-center">
+
+
+
+<div class="b-example-divider mb-0"></div>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center justify-content-center ">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
             <h4 class="my-0 fw-normal fonteIBM">Grátis</h4>
           </div>
-          <div class="card-body">
+          <div class="card-body shadow-lg">
             <h1 class="card-title pricing-card-title fonteIBM">R$ 0<small class="text-body-secondary fw-light">/mês</small></h1>
             <ul class="list-unstyled mt-3 mb-4 fonteIBM">
               <li>Limite de 5 clientes</li>
@@ -22,7 +37,7 @@
               <li>Limite de 5 anamses</li>
               <li>Monitoramento limitado</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary botao fonteIBM">Começe já!</button>
+            <button type="button" class="w-100 btn me-2 btn-lg btn-outline-primary botao fonteIBM">Começe já!</button>
           </div>
         </div>
       </div>
@@ -31,7 +46,7 @@
           <div class="card-header py-3 bck borda">
             <h4 class="my-0 fw-normal fonteIBM">Pago</h4>
           </div>
-          <div class="card-body">
+          <div class="card-body shadow-lg">
             <h1 class="card-title pricing-card-title fonteIBM">R$ 70<small class="text-body-secondary fw-light">/mês</small></h1>
             <ul class="list-unstyled mt-3 mb-4 fonteIBM">
               <li>Máximo de 200 clientes</li>
@@ -39,13 +54,13 @@
               <li>Sem limite de anamses</li>
               <li>Acesso à prescrições, metas e monitoramento </li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary botao fonteIBM">Ver plano</button>
+            <button type="button" class="w-100 btn me-2 btn-lg btn-outline-primary botao fonteIBM">Ver plano</button>
           </div>
         </div>
       </div>
     </div>
 
-    <h2 class="display-6 text-center mb-4 fonteIBM verdeEscuro">Compare planos</h2>
+    <a id="planos"><h2 class="display-6 text-center fonteIBM verdeEscuro">Compare planos</h2></a>
 
     <div class="table-responsive mb-6">
       <table class="table text-center justify-content-center">

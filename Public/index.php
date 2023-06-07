@@ -13,7 +13,7 @@
 
   <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
-      <li><a href="home" class="nav-link px-2 link-secondary"><img src="../Public/assets/img/logosemarco.png"></a></li>
+      <li><a href="home" class="nav-link px-2 link-secondary"><img src="../Public/assets/img/logosemarco.png" width="135px" height="39px"></a></li>
       </div>
 
 

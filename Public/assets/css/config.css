@@ -17,9 +17,7 @@
 .logo {
     float: left;
 }
-p {
-    margin: relative;
-}
+
 .botao {
         --bs-btn-color: #00bf63;
         --bs-btn-border-color: #00bf63;

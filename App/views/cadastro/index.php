@@ -32,7 +32,7 @@
         </div>
 
         <!-- Submit button -->
-        <button type="button" class="btn btn-outline-primary botao me-2 mb-4 verdeEscuro">Entrar</button>
+        <button type="button" class="btn btn-outline-primary botao me-2 mb-4 verdeEscuro">Cadastre-se</button>
 
         <!-- Register buttons -->
         <div class="text-center">

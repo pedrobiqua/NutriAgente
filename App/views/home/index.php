@@ -6,7 +6,7 @@
   <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
     <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
       <h1 class="display-4 fw-bold lh-1 fonteIBM verdeEscuro"><span style = "color:#FE914D">Nutri</span><span style = "color:#80DE59">A</span>gente conectando nutricionistas e seus clientes</h1>
-      <p class="lead fonteIBM">Conecte-se com o sucesso nutricional! Nossa plataforma é o elo perfeito para nutricionistas e seus clientes alcançarem juntos uma jornada de saúde transformadora.</p>
+      <p class="lead fonteDosis">Conecte-se com o sucesso nutricional! Nossa plataforma é o elo perfeito para nutricionistas e seus clientes alcançarem juntos uma jornada de saúde transformadora.</p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
         <a href="cadastro"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro">Comece já!</button></a>
         <a rel="noopener" href="#planos"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro">Ver planos</button></a>
@@ -30,14 +30,14 @@
             <h4 class="my-0 fw-normal fonteIBM">Grátis</h4>
           </div>
           <div class="card-body shadow-lg">
-            <h1 class="card-title pricing-card-title fonteIBM">R$ 0<small class="text-body-secondary fw-light">/mês</small></h1>
-            <ul class="list-unstyled mt-3 mb-4 fonteIBM">
+            <h1 class="card-title pricing-card-title fonteIBM">R$ 0<small class="text-body-secondary fw-light fonteIBM">/mês</small></h1>
+            <ul class="list-unstyled mt-3 mb-4 fonteDosis">
               <li>Limite de 5 clientes</li>
               <li>Emissão de 10 planos alimentares</li>
               <li>Limite de 5 anamses</li>
               <li>Monitoramento limitado</li>
             </ul>
-            <button type="button" class="w-100 btn me-2 btn-lg btn-outline-primary botao fonteIBM">Começe já!</button>
+            <button type="button" class="w-100 btn me-2 btn-lg btn-outline-primary botao fonteDosis">Começe já!</button>
           </div>
         </div>
       </div>
@@ -47,23 +47,23 @@
             <h4 class="my-0 fw-normal fonteIBM">Pago</h4>
           </div>
           <div class="card-body shadow-lg">
-            <h1 class="card-title pricing-card-title fonteIBM">R$ 70<small class="text-body-secondary fw-light">/mês</small></h1>
-            <ul class="list-unstyled mt-3 mb-4 fonteIBM">
+            <h1 class="card-title pricing-card-title fonteIBM">R$ 70<small class="text-body-secondary fw-light fonteIBM">/mês</small></h1>
+            <ul class="list-unstyled mt-3 mb-4 fonteDosis">
               <li>Máximo de 200 clientes</li>
               <li>Sem limite de emissão de planos alimentares</li>
               <li>Sem limite de anamses</li>
               <li>Acesso à prescrições, metas e monitoramento </li>
             </ul>
-            <button type="button" class="w-100 btn me-2 btn-lg btn-outline-primary botao fonteIBM">Ver plano</button>
+            <button type="button" class="w-100 btn me-2 btn-lg btn-outline-primary botao fonteDosis">Ver plano</button>
           </div>
         </div>
       </div>
     </div>
 
-    <a id="planos"><h2 class="display-6 text-center fonteIBM verdeEscuro">Compare planos</h2></a>
+    <a id="planos"><h2 class="display-6 text-center verdeEscuro fonteIBM ">Compare planos</h2></a>
 
     <div class="table-responsive mb-6">
-      <table class="table text-center justify-content-center">
+      <table class="table text-center justify-content-center fonteDosis">
         <thead>
           <tr>
             <th style="width: 34%;"></th>
@@ -73,7 +73,7 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row" class="text-start justify-content-center">Pacientes</th>
+            <th scope="row" class="text-start justify-content-center ">Pacientes</th>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p>5</p></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p>200</p></td>
           </tr>

@@ -1,7 +1,7 @@
 <div class="d-flex align-items-center justify-content-center m-3">
     <h1 style="color: #00bf63;" class="fonteIBM">Login</h1>
 </div>
-<section class="w-100 p-4 d-flex justify-content-center pb-4">
+<section class="w-100 p-4 d-flex justify-content-center pb-4 fonteDosis">
     <form>
         <!-- Email input -->
         <div class="form-outline mb-4">
@@ -20,6 +20,8 @@
             <div class="col">
                 <!-- Simple link -->
                 <a href="#!" class="verdeEscuro">Esqueceu a senha?</a>
+                <!-- PARA DEBUG E ACESSAR PAGINA DO CLIENTE DELETAR DPS-->
+                <a href="cliente" class="verdeEscuro">Cliente</a>
             </div>
         </div>
 

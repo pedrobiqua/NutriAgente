@@ -26,7 +26,7 @@
         <p class="card-text fonteIBM ">Veja seu plano alimentar.</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button>
+            <a href = "planoalimentar"> <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button> </a>
           </div>
         </div>
       </div>

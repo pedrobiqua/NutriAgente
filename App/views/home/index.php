@@ -34,7 +34,7 @@
             <ul class="list-unstyled mt-3 mb-4 fonteDosis">
               <li>Limite de 5 clientes</li>
               <li>Emissão de 10 planos alimentares</li>
-              <li>Limite de 5 anamses</li>
+              <li>Limite de 5 anamneses</li>
               <li>Monitoramento limitado</li>
             </ul>
             <button type="button" class="w-100 btn me-2 btn-lg btn-outline-primary botao fonteDosis">Começe já!</button>
@@ -49,9 +49,9 @@
           <div class="card-body shadow-lg">
             <h1 class="card-title pricing-card-title fonteIBM">R$ 70<small class="text-body-secondary fw-light fonteIBM">/mês</small></h1>
             <ul class="list-unstyled mt-3 mb-4 fonteDosis">
-              <li>Máximo de 200 clientes</li>
+              <li>Clientes Ilimitados</li>
               <li>Sem limite de emissão de planos alimentares</li>
-              <li>Sem limite de anamses</li>
+              <li>Sem limite de anamneses</li>
               <li>Acesso à prescrições, metas e monitoramento </li>
             </ul>
             <button type="button" class="w-100 btn me-2 btn-lg btn-outline-primary botao fonteDosis">Ver plano</button>
@@ -75,7 +75,7 @@
           <tr>
             <th scope="row" class="text-start justify-content-center ">Pacientes</th>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p>5</p></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p>200</p></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p>Ilimitado</p></td>
           </tr>
           <tr>
             <th scope="row" class="text-start justify-content-center">Planos Alimentares</th>
@@ -83,7 +83,7 @@
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p>Ilimitado</p></td>
           </tr>
           <tr>
-            <th scope="row" class="text-start justify-content-center">Anamses</th>
+            <th scope="row" class="text-start justify-content-center">Anamneses</th>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p>5</p></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p>Ilimitado</p></td>
           </tr>

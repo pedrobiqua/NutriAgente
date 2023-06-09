@@ -20,4 +20,19 @@ class Login extends Controller
     $this->view('login/index');
   }
 
+  /*
+  * Loga no sistema
+  */
+  public function iniciarSessao(string $userLogin,string $password)
+  {
+    $User = $this->model('Logins');
+    $data = $User::findUser($userLogin, $password);
+
+    if( isset($data) and !empty($data)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }

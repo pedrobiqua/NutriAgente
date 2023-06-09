@@ -26,7 +26,7 @@
         <p class="card-text fonteIBM ">Veja seu plano alimentar.</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <a href = "planoalimentar"> <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button> </a>
+            <a href = "planoAlimentar"> <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button> </a>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@
         <p class="card-text fonteDosis">Converse com seu nutriciona.</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button>
+            <a href="chat"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button></a>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
         <p class="card-text fonteDosis">Veja publicações e participe da rede da NutriAgente!</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button>
+            <a href="publicacao"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button></a>
           </div>
           
         </div>

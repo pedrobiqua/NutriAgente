@@ -41,7 +41,7 @@
         <p class="card-text fonteDosis">Agende sua consulta!</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Agendar</button>
+          <a href = "agendar"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Agendar</button> </a>
           </div>
         </div>
       </div>

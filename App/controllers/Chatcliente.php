@@ -10,14 +10,14 @@ use App\core\Controller;
  * Data atualizacao: 30/05/2023
  * Atualizado por: Pedro Bianchini de Quadros 
  */
-class Chat extends Controller
+class Chatcliente extends Controller
 {
   /*
   * chama a view index.php do  /home   ou somente   /
   */
   public function index()
   {
-    $this->view('cliente/chat');
+    $this->view('cliente/chatcliente');
   }
 
 }

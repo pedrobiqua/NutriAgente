@@ -107,11 +107,6 @@
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p>Não incluso</p></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p>Incluso</p></td>
           </tr>
-          <tr>
-            <th scope="row" class="text-start justify-content-center"></th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p></p></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg> <p></p></td>
-          </tr>
         </tbody>
 
 

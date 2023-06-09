@@ -58,11 +58,11 @@
             <div width=100% style="width:100%;">
                 <svg class="bi pe-none me-2" width="30"  height="600"></svg>
             </div>
-            <div width=100% style="width:100%;">
+            <div width=100% style="display: flex; width:100%;">
                 <svg class="bi pe-none me-2" width="30"  height="60"></svg>
                 <input class="fs-4 fonteDosis" type="text" id="name" placeholder="Digite sua mensagem..." style="width: 85%; border-radius: 25px; position:relative; left:-3%; background: #f4f4f4"></input>
-                <button style= "background-color: #00bf63; width: 11%; height: 42px; border-radius: 25px; position:relative; left:-1%;" onmouseover="this.style.backgroundColor='#7eda55';" onmouseout="this.style.backgroundColor='#00bf63';">
-                    <img src="../Public/assets/img/send.png" style="width: 30px; height: 30px;"></img>
+                <button style= "background-color: #00bf63; width: 11%;  border-radius: 25px; position:relative; left:-1%;" onmouseover="this.style.backgroundColor='#7eda55';" onmouseout="this.style.backgroundColor='#00bf63';">
+                    <img src="../Public/assets/img/send.png" style="width: 42px; height: 42px;"></img>
                 </button>
             </div>
         </div>

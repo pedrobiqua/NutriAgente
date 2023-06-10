@@ -52,18 +52,20 @@ class Cadastros
   *
   * @return   array
   */
-  public static function cadastrarTipo($tipo_usuario, $id)
+  public static function cadastrarTipo($tipo_usuario, $id, $nome)
   {
     $conn = new Database();
 
     // Preparação da query de inserção
     if( $tipo_usuario == 'N' ) {
-      $query = "INSERT INTO nutricionistas (usuario_id, registro, modelo_conta) VALUES ('" . $id . "', '', 'gratis')";
+      $query = "INSERT INTO nutricionistas (usuario_id, registro, modelo_conta, nome) VALUES ('" . $id . "', '', 'gratis', '" . $nome . "')";
     } else {
-      $query = "INSERT INTO clientes (usuario_id, nutricionista_id) VALUES ('" . $id . "', NULL)";
+      $query = "INSERT INTO clientes (usuario_id, nutricionista_id, nome) VALUES ('" . $id . "', NULL, '" . $nome . "')";
     }
 
     $result = $conn->executeQuery($query);
+
+    echo "Executei a query: " . $query . "<br>";
 
     // Verificação do sucesso da inserção
     if ($result->rowCount() > 0) {

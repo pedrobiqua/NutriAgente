@@ -3,6 +3,13 @@
 </div>
 <section class="w-100 p-4 d-flex justify-content-center pb-4">
     <form method="post" action="cadastro">
+
+        <!-- Nome input -->
+        <div class="form-outline mb-4">
+            <input type="text" id="form2Example1" class="form-control" name="nome"/>
+            <label class="form-label" for="form2Example1">Nome</label>
+        </div>
+
         <!-- Email input -->
         <div class="form-outline mb-4">
             <input type="email" id="form2Example1" class="form-control" name="email"/>

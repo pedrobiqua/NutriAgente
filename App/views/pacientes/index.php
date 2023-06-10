@@ -4,68 +4,33 @@
 
 <div class="container justify-content-center">
     <div class="row ">
-        <button type="button" class="btn btn-outline-primary botao me-2 mb-4 verdeEscuro">Adicionar Paciente</button>
+        <form action="pacientes/pacienteOptions" method="post">
+            <button type="button" class="btn btn-outline-primary botao me-2 mb-4 verdeEscuro">Adicionar Paciente</button>
+        </form>
     </div>
     <div class="row">
         <!-- Montar essa página com as informações do Banco, cada coluna será uma pessoa -->
-        <div class="col-4 mb-4">
-            <div class="card shadow-lg" style="width: 18rem;">
-                <div class="card-body">
-                    <h4 class="card-title verdeEscuro fonteIBM">Estélio Natalia</h6>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Objetivo : Emagrecimento</h5>
-                    <h4 class="card-title verdeEscuro fonteIBM">Assinatura</h5>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Data início : 10/02/23</h4>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Data vencimento : 10/08/23</h4>
-                    <div class="btn-group">
-                        <a href="publicacao"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button></a>
+        <?php foreach ($data['pacientes'] as $key => $value) { ?>
+            <div class="col-4 mb-4">
+                <div class="card shadow-lg" style="width: 18rem;">
+                    <div class="card-body">
+                        <h4 id="name" class="card-title verdeEscuro fonteIBM" data-att="<?= $value['id'] ?>"><?= empty($value['nome']) ? "Não apresenta nome" : $value['nome'] ?></h6>
+                        <h6 class="card-subtitle mb-2 text-muted fonteDosis">Objetivo : Emagrecimento</h5>
+                        <h4 class="card-title verdeEscuro fonteIBM">Assinatura</h5>
+                        <h6 class="card-subtitle mb-2 text-muted fonteDosis">Data início : 10/02/23</h4>
+                        <h6 class="card-subtitle mb-2 text-muted fonteDosis">Data vencimento : 10/08/23</h4>
+                        <form action="pacientes/pacienteOptions" method="post">
+                            <div class="btn-group">
+                                <input type="text" value="<?= $value['id'] ?>" name="id" hidden>
+                                <input type="submit" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis" value="Visualizar" name="visualizar"/>
+                            </div>
+                            <div class="btn-group">
+                                <input type="submit" class="btn btn-outline-danger me-2 fonteDosis" value="Remover" name="remover"/>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-4 mb-4">
-            <div class="card shadow-lg" style="width: 18rem;">
-                <div class="card-body">
-                    <h4 class="card-title verdeEscuro fonteIBM">Ananda Conka</h6>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Objetivo : Ganho de massa muscular</h5>
-                    <h4 class="card-title verdeEscuro fonteIBM">Assinatura</h5>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Data início : 21/04/23</h4>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Data vencimento : 10/10/23</h4>
-                    <div class="btn-group">
-                        <a href="publicacao"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-4 mb-4">
-            <div class="card shadow-lg" style="width: 18rem;">
-                <div class="card-body">
-                    <h4 class="card-title verdeEscuro fonteIBM">Natalie Pellizzaro</h6>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Objetivo : Emagrecimento</h5>
-                    <h4 class="card-title verdeEscuro fonteIBM">Assinatura</h5>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Data início : 13/01/23</h4>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Data vencimento : 13/07/23</h4>
-                    <div class="btn-group">
-                        <a href="publicacao"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-4 mb-4">
-            <div class="card shadow-lg" style="width: 18rem;">
-                <div class="card-body">
-                    <h4 class="card-title verdeEscuro fonteIBM">Manoel Gomes</h6>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Objetivo : Bulking</h5>
-                    <h4 class="card-title verdeEscuro fonteIBM">Assinatura</h5>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Data início : 10/02/23</h4>
-                    <h6 class="card-subtitle mb-2 text-muted fonteDosis">Data vencimento : 10/07/23</h4>
-                    <div class="btn-group">
-                        <a href="publicacao"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php }?>
     </div>
 </div>

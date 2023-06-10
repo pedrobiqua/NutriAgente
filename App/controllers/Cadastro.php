@@ -23,7 +23,7 @@ class Cadastro extends Controller
   /*
   * Cadastra um novo usuario
   */
-  public function cadastrar($cliente = '', $nutricionista = '', $loginuser, $senha)
+  public function cadastrar($cliente = '', $nutricionista = '', $loginuser, $senha, $nome)
   {
     $cadastro = $this->model('Cadastros');
     $tipo_usuario = '';
@@ -52,7 +52,7 @@ class Cadastro extends Controller
         return false;
       }
 
-      $result_type = $cadastro::cadastrarTipo($tipo_usuario, $id);
+      $result_type = $cadastro::cadastrarTipo($tipo_usuario, $id, $nome);
       echo $result_type;
 
       if( $result_type ) {

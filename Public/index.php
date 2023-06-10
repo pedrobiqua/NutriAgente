@@ -40,7 +40,7 @@
   //echo $app
 
   ?>
-
+  <div class="content"></div>
   <footer class="fonteDosis footer navbar-fixed-bottom">
     <ul class="nav justify-content-center border-bottom">
       <li class="nav-item"><a href="#" class="nav-link px-2 verdeEscuro">Facebook</a></li>

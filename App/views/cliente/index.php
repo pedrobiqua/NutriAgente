@@ -60,7 +60,7 @@
         <p class="card-text fonteDosis">Converse com seu nutriciona.</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <a href="chat"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button></a>
+            <a href="chatcliente"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button></a>
           </div>
         </div>
       </div>

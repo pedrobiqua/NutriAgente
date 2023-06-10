@@ -40,7 +40,7 @@
         <p class="card-text fonteDosis">Adicione ou revise receitas publicadas.</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Acessar</button>
+            <a href="banco"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Acessar</button></a>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
         <p class="card-text fonteDosis">Verifique consultas e eventos na agenda.</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button>
+            <a href="agendar"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button></a>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
         <p class="card-text fonteDosis">Verifique o status das assinaturas de seus pacientes.</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Verificar</button>
+            <a href="pacientes"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Verificar</button></a>
           </div>
           
         </div>
@@ -95,7 +95,7 @@
         <p class="card-text fonteDosis">Veja publicações e participe da rede da NutriAgente!</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button>
+            <a href="publicacao"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button></a>
           </div>
           
         </div>

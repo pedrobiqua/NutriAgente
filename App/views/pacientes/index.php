@@ -7,6 +7,7 @@
         <button type="button" class="btn btn-outline-primary botao me-2 mb-4 verdeEscuro">Adicionar Paciente</button>
     </div>
     <div class="row">
+        <!-- Montar essa página com as informações do Banco, cada coluna será uma pessoa -->
         <div class="col-4 mb-4">
             <div class="card shadow-lg" style="width: 18rem;">
                 <div class="card-body">

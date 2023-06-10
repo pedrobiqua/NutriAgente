@@ -51,7 +51,7 @@
 </div>
 
 <div class="flex-shrink-0 p-3" style="display: inline-block; background: linear-gradient(#ff914c, #ff914c, #7eda55, #00bf63); border-radius: 25px 5px 25px 5px; width: 81%; position:relative; left:2%; z-index:2;">
-    <div class="flex-shrink-0 p-3" style="z-index=1; background: url('../Public/assets/img/fundo.jpg'); border-radius: 25px 5px 25px 5px;">
+    <div class="flex-shrink-0 p-3" style="z-index: 1; background: url('../Public/assets/img/fundo.jpg'); border-radius: 25px 5px 25px 5px;">
         <a class="d-flex align-items-center pb-3" height="676">
         <svg class="bi pe-none me-2" width="30"  height="660"></svg>
         <div class="line" style="width:100%;">

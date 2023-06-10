@@ -20,13 +20,13 @@
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
   <div class="col">
     <div class="card shadow-sm shadow-lg">
-    <h2 class = "fonteIBM verdeEscuro text-center">Pacientes</h2>
+    <h2 class = "fonteIBM verdeEscuro text-center">  Pacientes </h2>
     <img class="card-img-top" src="../Public/assets/img/paciente.jpg" width="337" height="225"><title>Pacientes</title>
       <div class="card-body">
         <p class="card-text fonteIBM ">Veja o status de seus pacientes.</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-outline-primary botao me-2 laranka fonteDosis">Visualizar</button>
+            <a href="pacientes"><button type="button" class="btn btn-outline-primary botao me-2 laranka fonteDosis">Visualizar</button></a>
           </div>
         </div>
       </div>

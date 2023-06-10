@@ -20,10 +20,6 @@
             <div class="col">
                 <!-- Simple link -->
                 <a href="#!" class="verdeEscuro">Esqueceu a senha?</a>
-                <!-- PARA DEBUG E ACESSAR PAGINA DO CLIENTE DELETAR DPS-->
-                <a href="cliente" class="verdeEscuro">Cliente</a>
-                <!-- PARA DEBUG E ACESSAR PAGINA DO CNUTRI DELETAR DPS-->
-                <a href="nutricionista" class="verdeEscuro">Nutri</a>
             </div>
         </div>
 

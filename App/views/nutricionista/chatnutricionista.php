@@ -19,7 +19,7 @@ header("Expires: 0");
     text-align: right;
     max-width: 65%;
     padding: 12px;
-    background: linear-gradient(#00bf63, #00bf63, #7eda55, transparent);
+    background: linear-gradient(#ff914c, #ff914c, #f7a46f, transparent);
     border-radius: 10px;
     font-family: 'Dosis';
     color: black;
@@ -34,7 +34,7 @@ header("Expires: 0");
     right: -12px;
     width: 20px;
     height: 20px;
-    background: linear-gradient(135deg, #00bf63 0%, #00bf63 50%, transparent 50%, transparent);
+    background: linear-gradient(135deg, #ff914c 0%, #ff914c 50%, transparent 50%, transparent);
     }
 
     .message-box p span {
@@ -49,7 +49,7 @@ header("Expires: 0");
     }
 
     .friend-message p {
-    background: linear-gradient(#ff914c, #ff914c, #f7a46f, transparent);
+    background: linear-gradient(#00bf63, #00bf63, #7eda55, transparent);
     }
 
     .friend-message {
@@ -72,78 +72,64 @@ header("Expires: 0");
     }
 </style>
 <script>
-    function atualizaChat() {
+    function atualizaChat(){
+
+        var input = "C/;/" + document.getElementById('name').value + "21:40";
         var bagulho = document.getElementById('name');
-        var input = "C/;/" + bagulho.value + "21:40";
         bagulho.value = "";
 
-        // // Abre o arquivo chat.txt em modo de escrita
-        // var fs = require('fs');
-        // var filePath = '../Public/assets/chatshintakavaraestelionatalia.txt';
-
-        // fs.appendFile(filePath, input + '\n', function (err) {
-        //     if (err) throw err;
-        //     console.log('Nova mensagem adicionada ao arquivo chat.txt');
-        // });
-
         location.reload();
+        //pasta a ser salvo o arquivo
+        var pasta="../Public/assets/chat.txt";
+        //carrega o txt
+        var esc = dados.OpenTextFile(pasta, 1, true);
+        //escreve o que foi passado no parametro texto que é o texto contido no TextArea
+        esc.WriteLine(input);
+        //fecha o txt
+        esc.Close();
     }
 </script>
-<div  style="display: flex;">
-<div class="flex-shrink-0 p-3" style="display: inline-block; background: linear-gradient(#ff914c, #ff914c, #7eda55, #00bf63); border-radius: 25px 5px 25px 5px; width: 15%; position:relative; left:1%;">
-    <a class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
-      <svg class="bi pe-none me-2" width="30"  height="355"></svg>
-      <div>
-      <div>
-      <p class="fs-3 fonteDosis" style="text-align: center; width: 180px;">NUTRICIONISTA</p>
-      </div>
-      <div>
-      <img class="border border-5 border-success rounded-circle shadow-4-strong" alt="FotoDePerfil" src="../Public/assets/img/shin.jpg" width = "180" height = "180"/>
-      </div>
-      <p class="fs-4 fonteDosis" style="text-align: center; width: 180px;">Shin Takavara</p>
-      </div>
-    </a>
-    <ul>
-      <li class="mb-1">
-        <p class="fs-4 fonteDosis">Minhas redes</p>
-        <div class="collapse show" id="home-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li>
-                <img src="../Public/assets/img/twitter.png" width = "25" height = "25" style="border-radius: 25%;"/>
-                <a href="#" class="fs-5 link-body-emphasis fonteIBM text-decoration-none">Twitter</a>
-            </li>
-            <li>
-                <a href="#" class="fs-5 link-body-emphasis fonteIBM text-decoration-none" style="position:relative; left: 25px;">@shin_takavara</a>
-            </li>
-            <li>
-                <img src="../Public/assets/img/insta.png" width = "25" height = "25" style="border-radius: 25%;"/>
-                <a href="#" class="fs-5 link-body-emphasis fonteIBM text-decoration-none">Instagram</a>
-            </li>
-            <li>
-                <a href="#" class="fs-5 link-body-emphasis fonteIBM text-decoration-none" style="position:relative; left: 25px;">@shin_takavara</a>
-            </li>
-            <li>
-                <img src="../Public/assets/img/face.png" width = "25" height = "25" style="border-radius: 25%;"/>
-                <a href="#" class="fs-5 link-body-emphasis fonteIBM text-decoration-none">Facebook</a>
-            </li>
-            <li>
-                <a href="#" class="fs-5 link-body-emphasis fonteIBM text-decoration-none" style="position:relative; left: 25px;">@shin_takavara</a>
-            </li>
-            <li>
-                <img src="../Public/assets/img/email.png" width = "25" height = "25" style="border-radius: 25%;"/>
-                <a href="#" class="fs-5 link-body-emphasis fonteIBM text-decoration-none">E-mail</a>
-            </li>
-            <li>
-                <a href="#" class="fs-5 link-body-emphasis fonteIBM text-decoration-none" style="position:relative; left: 25px;">shin.tv@gmail.com</a>
-            </li>
-          </ul>
+<div style="display: flex;">
+<div class="flex-shrink-0 p-3" style="overflow-y: auto; background: linear-gradient(#00bf63, #7eda55, #ff914c, #ff914c); border-radius: 25px 5px 25px 5px; width: 15%; position:relative; left:1%;">
+    <button id="natalia" style="margin-bottom: 20px; display: flex; background-color: transparent; width: 100%; heigth: 80px; border-radius: 25px 5px 5px 5px; border: 2px solid black">
+        <img class="border border-5 border-success rounded-circle" alt="FotoDePerfil" src="../Public/assets/img/estelio.jpg" width = "60" height = "60" style="margin-top: 5px;"/>
+        <div>
+            <h6></h6>
+            <h4 style="text-align: left;">Estelio Natalia</h4>
+            <h6 style="text-align: left;">Online</h6>
         </div>
-      </li>
-    </ul>
+    </button> 
+
+    <button id="leo" style="margin-bottom: 20px; display: flex; background-color: transparent; width: 100%; heigth: 80px; border-radius: 5px 5px 5px 5px; border: 1px solid black">
+        <img class="border border-5 border-success rounded-circle" alt="FotoDePerfil" src="../Public/assets/img/leo.png" width = "60" height = "60" style="margin-top: 5px"/>
+        <div>
+            <h6></h6>
+            <h4 style="text-align: left;">Leo</h4>
+            <h6 style="text-align: left;">Offline</h6>
+        </div>
+    </button> 
+
+    <button id="muzy" style="margin-bottom: 20px; display: flex; background-color: transparent; width: 100%; heigth: 80px; border-radius: 5px 5px 5px 5px; border: 1px solid black">
+        <img class="border border-5 border-success rounded-circle" alt="FotoDePerfil" src="../Public/assets/img/muzy.png" width = "60" height = "60" style="margin-top: 5px"/>
+        <div>
+            <h6></h6>
+            <h4 style="text-align: left;">Muzy</h4>
+            <h6 style="text-align: left;">Offline</h6>
+        </div>
+    </button> 
+
+    <button id="renato" style="margin-bottom: 20px; display: flex; background-color: transparent; width: 100%; heigth: 80px; border-radius: 5px 5px 25px 5px; border: 1px solid black">
+        <img class="border border-5 border-success rounded-circle" alt="FotoDePerfil" src="../Public/assets/img/renato.png" width = "60" height = "60" style="margin-top: 5px"/>
+        <div>
+            <h6></h6>
+            <h4 style="text-align: left;">Renato</h4>
+            <h6 style="text-align: left;">Online</h6>
+        </div>
+    </button> 
 </div>
 
-<div class="flex-shrink-0 p-3" style="display: inline-block; background: linear-gradient(#ff914c, #ff914c, #7eda55, #00bf63); border-radius: 25px 5px 25px 5px; width: 81%; position:relative; left:2%; z-index:2; height: 100%">
-    <div class="flex-shrink-0 p-3" style="z-index: 1; background: url('../Public/assets/img/fundo.jpg'); border-radius: 25px 5px 25px 5px; height: 100%">
+<div class="flex-shrink-0 p-3" style="display: inline-block; background: linear-gradient(#00bf63,  #7eda55, #ff914c, #ff914c); border-radius: 25px 5px 25px 5px; width: 81%; position:relative; left:2%; z-index:3; height: 100%">
+    <div class="flex-shrink-0 p-3" style="z-index: 2; background: url('../Public/assets/img/fundo.jpg'); border-radius: 25px 5px 25px 5px; height: 100%">
         <a class="d-flex align-items-center pb-3" height="676">
         <svg class="bi pe-none me-2" width="30" height="660"></svg>
         <div class="line" style="width:100%;">
@@ -165,11 +151,11 @@ header("Expires: 0");
                                     var div = document.createElement('div');
                                     div.id = 'minha-div' + i
 
-                                    if (sender === 'N') {
+                                    if (sender === 'C') {
                                         div.className = 'message-box friend-message';
                                     }
 
-                                    if (sender === 'C') {
+                                    if (sender === 'N') {
                                         div.className = 'message-box my-message';
                                     }
 
@@ -185,7 +171,6 @@ header("Expires: 0");
                                     elementoPai.appendChild(div);
                                     }
                                 }
-                                
                             })
                         .catch(error => {
                             // Trate erros de leitura do arquivo
@@ -197,13 +182,13 @@ header("Expires: 0");
             <div width=100% style="display: flex; width:100%;">
                 <svg class="bi pe-none me-2" width="30"  height="60"></svg>
                 <input class="fs-4 fonteDosis" type="text" id="name" placeholder="Digite sua mensagem..." style="width: 85%; border-radius: 25px; position:relative; left:-3%; background: #f4f4f4"></input>
-                <button style= "background-color: #00bf63; width: 11%;  border-radius: 25px; position:relative; left:-1%;" onmouseover="this.style.backgroundColor='#7eda55';" onmouseout="this.style.backgroundColor='#00bf63';" onclick="atualizaChat()">
+                <button style= "background-color: #ff914c; width: 11%;  border-radius: 25px; position:relative; left:-1%;" onmouseover="this.style.backgroundColor='#ffae7d';" onmouseout="this.style.backgroundColor='#ff914c';" onclick="atualizaChat()">
                     <img src="../Public/assets/img/send.png" style="width: 42px; height: 42px;"></img>
                 </button>
             </div>
         </div>
         </a>
+        </div>
     </div>
-</div>
 </div>
 </html>

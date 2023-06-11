@@ -7,7 +7,7 @@
     </div>
     
     <div class="col-lg-6 mx-auto justify-content-center">
-      <h2 class="font-weight-bold fonteIBM verdeEscuro text-center">Seja bem-vinda,</p>
+      <h2 class="font-weight-bold fonteIBM verdeEscuro text-center">Seja bem-vindo,</p>
       <h2 class="font-weight-bold fonteIBM verdeEscuro text-center" style = "color:#FE914D">Shin Takavara!</p>
 
     </div>  

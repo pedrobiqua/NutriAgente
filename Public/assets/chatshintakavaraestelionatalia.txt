@@ -1,0 +1,10 @@
+N/;/Fala Nutricionista 1/;/20:08
+C/;/Fala Cliente 1/;/20:08
+N/;/Fala Nutricionista 2/;/20:08
+C/;/Fala Cliente 2/;/20:09
+N/;/Fala Nutricionista 3/;/20:10
+N/;/Fala Nutricionista 4/;/20:10
+C/;/Fala Cliente 3/;/20:10
+C/;/Fala Cliente 4/;/20:10
+N/;/Fala Nutricionista 5/;/20:10
+N/;/Fala Nutricionista 5/;/20:10

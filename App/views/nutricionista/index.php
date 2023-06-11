@@ -65,29 +65,8 @@
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card shadow-sm shadow-lg">
-    <h2 class = "fonteIBM verdeEscuro text-center">Gerenciar Assinaturas</h2>
-    <img class="card-img-top" src="../Public/assets/img/financeiro.jpg" width="337" height="225"><title>Gerenciar Assinaturas</title>
-      <div class="card-body">
-        <p class="card-text fonteDosis">Verifique o status das assinaturas de seus pacientes.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <a href="pacientes"><button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Verificar</button></a>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-    
-  </div>
 
-  </div>
-  
-<div class="container">
-<div class="b-example-divider mb-0"><p></p></div>
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
-<div class="col">
+  <div class="col">
     <div class="card shadow-sm shadow-lg">
     <h2 class = "fonteIBM verdeEscuro text-center">Publicações</h2>
     <img class="card-img-top" src="../Public/assets/img/motivacional.jpg" width="337" height="225"><title>Publicações</title>
@@ -103,9 +82,10 @@
     </div>
   </div>
   
-</div>
-</div>
-</div>
+
+  </div>
+  
+
 <div class="b-example-divider mb-0"><p></p></div>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
     <!-- Espaçamento para organizar linhas -->

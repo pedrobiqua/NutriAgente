@@ -65,8 +65,6 @@ class Cadastros
 
     $result = $conn->executeQuery($query);
 
-    echo "Executei a query: " . $query . "<br>";
-
     // Verificação do sucesso da inserção
     if ($result->rowCount() > 0) {
       return true;

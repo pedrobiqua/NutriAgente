@@ -14,20 +14,26 @@ use PDO;
  */
 class Database extends PDO {
   // configuração do banco de dados
-  $config = include('config.php');
-
-  $DB48a8ebf311f13452f1d55e396f01ccd4 = $config['48a8ebf311f13452f1d55e396f01ccd4'];
-  $DB7b789f2b8da8b59f806bb8bf866e800b = $config['7b789f2b8da8b59f806bb8bf866e800b'];
-  $DBc6f3987d4f24a601dd891fe2a7c3d779 = $config['c6f3987d4f24a601dd891fe2a7c3d779'];
-  $DBd501317430077dd464c5d42282c329cb = $config['d501317430077dd464c5d42282c329cb'];
-  $DB12d0c18bad42dc82bd67a6b8e7d049f7 = $config['12d0c18bad42dc82bd67a6b8e7d049f7'];
+  private $DB_PORT = 3306;
 
   // armazena a conexão
   private $conn;
 
   public function __construct() {
+    
+    // Teste de conexão com o banco de dados
+    $a = $this->get('../_Anotações/Mario.txt');
+    $DB_NAME = $a;
+    $b = $this->get('../_Anotações/Daniel.txt');
+    $DB_USER = $b;
+    $c = $this->get('../_Anotações/Joao.txt');
+    $DB_PASSWORD = $c;
+    $d = $this->get('../_Anotações/Pedro.txt');
+    $DB_HOST = $d;
+
+
     // Quando essa classe é instanciada, é atribuido a variável $conn a conexão com o db
-    $this->conn = new PDO("mysql:dbname=$this->DB48a8ebf311f13452f1d55e396f01ccd4;host=$this->DBd501317430077dd464c5d42282c329cb;port=$this->DB12d0c18bad42dc82bd67a6b8e7d049f7;user=$this->DB7b789f2b8da8b59f806bb8bf866e800b;password=$this->DBc6f3987d4f24a601dd891fe2a7c3d779");
+    $this->conn = new PDO("mysql:dbname=$DB_NAME;host=$DB_HOST;port=$this->DB_PORT;user=$DB_USER;password=$DB_PASSWORD");
   }
 
   /**
@@ -68,5 +74,14 @@ class Database extends PDO {
     $stmt->execute();
     return $stmt;
   }
+
+  public function get($arquivo){
+    $arq  = fopen($arquivo, 'r');
+    
+    while (!feof($arq)) {
+      $linha = fgets($arq); // cria um array com o conteudo da linha atual do arquivo 
+      return $linha;die;
+    }
+}
 
 }

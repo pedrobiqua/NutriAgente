@@ -13,9 +13,15 @@ if(!isset($_SESSION['login'])) // if user isn't logged in
         $login = new Login();
         $result = $login->iniciarSessao($loginuser, $senha);
 
-        if( $result ) {
+        if( $result["resultado"] ) {
             $_SESSION['login'] = $result;
-            header('Location: /NutriAgente/Public/cliente');
+            if ($result["tipo"] == "N") {
+                header('Location: /NutriAgente/Public/nutricionista');
+            }
+            if ($result["tipo"] == "C") {
+                header('Location: /NutriAgente/Public/cliente');
+            }
+
         } else {
             include('login.php');
         }
@@ -25,6 +31,6 @@ if(!isset($_SESSION['login'])) // if user isn't logged in
     include('login.php');
 
 } else {
-    header('Location: /NutriAgente/Public/cliente');
+    header('Location: /NutriAgente/Public/login');
     $_SESSION['login'] = null;
 }

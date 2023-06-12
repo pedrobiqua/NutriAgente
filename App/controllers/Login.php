@@ -29,9 +29,9 @@ class Login extends Controller
     $data = $User::findUser($userLogin, $password);
 
     if( isset($data) and !empty($data)) {
-      return true;
+      return array("tipo" => $data[0]['tipo_conta'], "resultado" => true);
     } else {
-      return false;
+      return array("tipo" => null, "resultado" => false);
     }
   }
 

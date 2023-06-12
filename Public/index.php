@@ -47,7 +47,7 @@
       <li class="nav-item"><a href="#" class="nav-link px-2 verdeEscuro">Instagram</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 verdeEscuro">Twitter</a></li>
     </ul>
-    <p class="text-center verdeEscuro">© 2023 NutriAgente</p>
+    <p class="text-center verdeEscuro">© 2023 NutriAgente  <br> <strong>suporte@nutriagente.com</strong>  </p>
   </footer>
 </body>
 

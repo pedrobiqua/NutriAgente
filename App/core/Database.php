@@ -14,18 +14,20 @@ use PDO;
  */
 class Database extends PDO {
   // configuração do banco de dados
-  private $DB_NAME = 'nutriagente_db';
-  private $DB_USER = 'root';
-  private $DB_PASSWORD = '';
-  private $DB_HOST = 'localhost';
-  private $DB_PORT = 3306;
+  $config = include('config.php');
+
+  $DB48a8ebf311f13452f1d55e396f01ccd4 = $config['48a8ebf311f13452f1d55e396f01ccd4'];
+  $DB7b789f2b8da8b59f806bb8bf866e800b = $config['7b789f2b8da8b59f806bb8bf866e800b'];
+  $DBc6f3987d4f24a601dd891fe2a7c3d779 = $config['c6f3987d4f24a601dd891fe2a7c3d779'];
+  $DBd501317430077dd464c5d42282c329cb = $config['d501317430077dd464c5d42282c329cb'];
+  $DB12d0c18bad42dc82bd67a6b8e7d049f7 = $config['12d0c18bad42dc82bd67a6b8e7d049f7'];
 
   // armazena a conexão
   private $conn;
 
   public function __construct() {
     // Quando essa classe é instanciada, é atribuido a variável $conn a conexão com o db
-    $this->conn = new PDO("mysql:dbname=$this->DB_NAME;host=$this->DB_HOST;port=$this->DB_PORT;user=$this->DB_USER;password=$this->DB_PASSWORD");
+    $this->conn = new PDO("mysql:dbname=$this->DB48a8ebf311f13452f1d55e396f01ccd4;host=$this->DBd501317430077dd464c5d42282c329cb;port=$this->DB12d0c18bad42dc82bd67a6b8e7d049f7;user=$this->DB7b789f2b8da8b59f806bb8bf866e800b;password=$this->DBc6f3987d4f24a601dd891fe2a7c3d779");
   }
 
   /**

@@ -19,6 +19,7 @@ class App
     protected $params = [];
 
     public function __construct() {
+        $_GLOBALS['nutri_id'] = 7;
         $URL_ARRAY = $this->parseUrl();
         $this->getControllerFromUrl($URL_ARRAY);
         $this->getMethodFromUrl($URL_ARRAY);

@@ -1,23 +1,11 @@
-<style>
-    .input-group-append {
-        cursor: pointer;
-    }
-</style>
-
 <div class="d-flex align-items-center justify-content-center m-3">
-    <h1 style="color: #00bf63;" class="fonteIBM"> <strong> Adicionar Paciente </strong></h1>
+    <h1 style="color: #00bf63;" class="fonteIBM"> <strong> Editar Paciente </strong></h1>
 </div>
 
 <div class="container">
     <form method="post" action="pacientes/pacienteOptions">
         
-        <input type="text" value="<?= $_GLOBALS['nutri_id'] ?>" name="nutricionista_id" hidden>
-        
-        <!-- Text input -->
-        <div class="form-outline mb-4">
-            <input type="text" id="form6Example3" class="form-control" placeholder="Ex: João" name="nome_busca"/>
-            <label class="form-label" for="form6Example3">Nome do paciente</label>
-        </div>
+        <input type="text" value="<?= $_GLOBALS['nome'] ?>" name="nome" hidden>
 
         <!-- Text input -->
         <div class="form-outline mb-4">
@@ -51,6 +39,6 @@
 
         
         <!-- Submit button -->
-        <button type="submit" class="btn btn-outline-primary botao me-2 mb-4 verdeEscuro mb-4" name="adicionar">Adicionar</button>
+        <button type="submit" class="btn btn-outline-primary botao me-2 mb-4 verdeEscuro mb-4" name="editar">Editar</button>
     </form>
 </div>

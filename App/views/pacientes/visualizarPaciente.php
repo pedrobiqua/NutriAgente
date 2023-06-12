@@ -2,25 +2,25 @@
     <div class="col-lg-5 mx-4">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style = "height:600px">
         <div class="col p-4 d-flex flex-column position-static">
-        <h1 class="fonteIBM verdeEscuro" style="font-size:78px"><strong>Nome paciente</strong></h1>
+        <h1 class="fonteIBM verdeEscuro" style="font-size:78px"><strong><?= $_GLOBALS['nome'] ?></strong></h1>
         <p></p>
         <p></p>
         <p></p>
 
         <!-- Peso aqui -->
-        <h2 class="fonteDosis" style="font-size:72px">Peso:</h2>
+        <h2 class="fonteDosis" style="font-size:72px">Peso: 80KG</h2>
         <p></p>
         <p></p>
         <p></p>
 
         <!-- Altura aqui -->
-        <h2 class="fonteDosis" style="font-size:72px">Altura:</h2>
+        <h2 class="fonteDosis" style="font-size:72px">Altura: 1,72 </h2>
         <p></p>
         <p></p>
         <p></p>
 
         <!-- IMC aqui -->
-        <h2 class="fonteDosis" style="font-size:72px">IMC:</h2>
+        <h2 class="fonteDosis" style="font-size:72px">IMC: 27.07</h2>
             </div>
         </div>
     </div>

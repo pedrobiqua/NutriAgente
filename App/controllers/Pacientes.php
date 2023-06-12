@@ -1,7 +1,7 @@
 <?php
 
 use App\core\Controller;
-
+use App\models\GerenciamentoPacientes;
 /**
  * Descricao: Classe controladora da tela de login
  * 
@@ -26,11 +26,8 @@ class Pacientes extends Controller
    * Classe responsável por gerenciar as opções de cada paciente
    */
   public function pacienteOptions(){
-    if (isset($_POST['visualizar'])) {
-      // Mostrar as informações do paciente
-      echo "Entrou no visualizar";
-
-    } else if (isset($_POST['remover'])) {
+    
+    if (isset($_POST['remover'])) {
       // Remover o paciente
       $id = $_POST['id'];
 
@@ -38,8 +35,42 @@ class Pacientes extends Controller
       $Pacientes::removerPaciente($id);
 
     } else if(isset($_POST['adicionar'])){
-      // Adicionar o paciente
-      echo "Entrou no adicionar";
+
+      $nutricionista_id = $_POST['nutricionista_id'];
+      $nome = $_POST['nome_busca'];
+      $objetivo = $_POST['objetivo'];
+      $peso = $_POST['peso'];
+      $altura = $_POST['altura'];
+      $data_inicial = $_POST['data_inicial'];
+      $data_final = $_POST['data_final'];
+
+      $Pacientes = $this->model('GerenciamentoPacientes');
+      $data = $Pacientes::adicionarPaciente($nutricionista_id, $nome, $objetivo, $peso, $altura, $data_inicial, $data_final);
+
+      if ($data) {
+        echo "Paciente adicionado com sucesso";
+      } else {
+        echo "Erro ao adicionar paciente";
+      }
+
+    } else if(isset($_POST['editar'])){
+
+      $objetivo = $_POST['objetivo'];
+      $peso = $_POST['peso'];
+      $altura = $_POST['altura'];
+      $data_inicial = $_POST['data_inicial'];
+      $data_final = $_POST['data_final'];
+      $nome = $_POST['nome'];
+
+      $Pacientes = $this->model('GerenciamentoPacientes');
+      $data = $Pacientes::editarPaciente($objetivo, $peso, $altura, $data_inicial, $data_final, $nome);
+
+      if ($data) {
+        echo "Paciente editado com sucesso";
+      } else {
+        echo "Erro ao editar paciente";
+      }
+
     }
 
     header('Location: /NutriAgente/Public/pacientes');

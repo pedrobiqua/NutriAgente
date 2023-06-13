@@ -47,7 +47,7 @@
             <h4 class="my-0 fw-normal fonteIBM">Pago</h4>
           </div>
           <div class="card-body shadow-lg">
-            <h1 class="card-title pricing-card-title fonteIBM">R$ 70<small class="text-body-secondary fw-light fonteIBM">/mês</small></h1>
+            <h1 class="card-title pricing-card-title fonteIBM">R$ 50<small class="text-body-secondary fw-light fonteIBM">/mês</small></h1>
             <ul class="list-unstyled mt-3 mb-4 fonteDosis">
               <li>Clientes Ilimitados</li>
               <li>Sem limite de emissão de planos alimentares</li>

@@ -53,7 +53,6 @@ class Cadastro extends Controller
       }
 
       $result_type = $cadastro::cadastrarTipo($tipo_usuario, $id, $nome);
-      echo $result_type;
 
       if( $result_type ) {
         return true;

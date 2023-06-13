@@ -13,8 +13,9 @@
       <p class = "fonteDosis" style="font-size:30px">Calorias: 108 (kCal)</p>
       <p class = "fonteDosis" style="font-size:30px">Bom teór de proteínas</p>
 
-
+      
       <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">+Registrar consumo</button>
         <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Ver outras opções</button>
       </div>
     </div>
@@ -81,8 +82,8 @@
 
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">      
+      <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">+Registrar consumo</button>
       <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Ver outras opções</button>
-
     </div>
   </div>
   <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
@@ -151,6 +152,7 @@
 
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+      <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">+Registrar consumo</button>
       <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Ver outras opções</button>
     </div>
   </div>
@@ -203,6 +205,8 @@
 </div>
 </div>
 </div>
+
+<button type="submit" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Registrar consumo de outra refeição</button>
     <p></p>
     <p></p> 
     <p></p>

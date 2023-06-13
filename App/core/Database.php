@@ -80,7 +80,7 @@ class Database extends PDO {
     
     while (!feof($arq)) {
       $linha = fgets($arq); // cria um array com o conteudo da linha atual do arquivo 
-      return $linha;die;
+      return $linha;
     }
 }
 

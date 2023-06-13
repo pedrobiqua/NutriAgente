@@ -1,5 +1,6 @@
 <div class="justify-content-center ">   
 <h2 class="font-weight-bold fonteIBM verdeEscuro text-center">Banco de Receitas</p>
+<button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Adicionar novas receitas</button>
 </div>
 <div class="">
         <div class="col-md-7 mx-auto text-left">
@@ -23,6 +24,7 @@
               <li class="fonteDosis card-text mb-auto">Adicione o grão de bico, tahine, alho, azeite de oliva e suco de limão em um processador de alimentos e bata até ficar homogêneo.</li> 
               <li class="fonteDosis card-text mb-auto">Adicione sal e pimenta a gosto. </li>
               <li class="fonteDosis card-text mb-auto">Sirva com palitos de legumes. </li>
+              <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Adicionar ao plano alimentar</button>
             </div>
             <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/300x300?theme=thumb" alt="wrap [300x300]" style="width: 300px; height: 300px;" src="../Public/assets/img/wrap.png" data-holder-rendered="true">
           </div>
@@ -49,6 +51,7 @@
               <li class="fonteDosis card-text mb-auto">Espalhe o abacate amassado na tortilha de trigo integral. </li>
               <li class="fonteDosis card-text mb-auto">Adicione as folhas de alface, frango desfiado, tomate picado e queijo cottage. </li>
               <li class="fonteDosiscard-text mb-auto">Enrole a tortilha e sirva. </li>
+              <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Adicionar ao plano alimentar</button>
             </div>
             <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/300x300?theme=thumb" alt="palito [300x300]" style="width: 300px; height: 300px;" src="../Public/assets/img/palito.png" data-holder-rendered="true">
           </div>
@@ -84,6 +87,7 @@
               <li class="fonteDosis card-text mb-auto">Pegue cerca de uma colher dessa misture e modele com as mãos.</li>
               <li class="fonteDosis card-text mb-auto">Coloque uma fatia de berinjela, acrescente um pedaço de tomate confitado e enrole.</li>
               <li class="fonteDosis card-text mb-auto">Acomode em uma travessa, regue com o azeite dos tomates confitados e sirva.</li>
+              <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Adicionar ao plano alimentar</button>
             </div>
             <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/300x300?theme=thumb" alt="rolinho [300x300]" style="width: 300px; height: 300px;" src="../Public/assets/img/rolinho.png" data-holder-rendered="true">
           </div>
@@ -129,6 +133,7 @@
               <li class="fonteDosis card-text mb-auto">Comece a montagem do prato com as folhas de rúcula.</li>
               <li class="fonteDosis card-text mb-auto">Adicione o grão-de-bico, os cubos de batata-doce e o pepino.</li>
               <li class="fonteDosis card-text mb-auto">Acrescente o molho reservado e finalize com as cebolas, o gergelim e o tomilho seco.</li>
+              <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Adicionar ao plano alimentar</button>
             </div>
             <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/300x300?theme=thumb" alt="salada2 [300x300]" style="width: 300px; height: 300px;" src="../Public/assets/img/salada2.png" data-holder-rendered="true">
           </div>

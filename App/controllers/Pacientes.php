@@ -2,14 +2,7 @@
 
 use App\core\Controller;
 use App\models\GerenciamentoPacientes;
-/**
- * Descricao: Classe controladora da tela de login
- * 
- * @author Pedro Bianchini de Quadros
- * Data criacao: 07/06/2023
- * Data atualizacao: 
- * Atualizado por: 
- */
+
 class Pacientes extends Controller
 {
   /*

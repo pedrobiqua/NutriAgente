@@ -24,7 +24,6 @@ class GerenciamentoPacientes
   
   public static function encontrarPaciente(int $nome)
   {
-    echo "oieeeee";die;
     $conn = new Database();
     $result = $conn->executeQuery('SELECT * FROM clientes WHERE nome = :nome LIMIT 1', array(
       ':ID' => $nome

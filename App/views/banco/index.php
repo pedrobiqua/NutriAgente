@@ -138,4 +138,8 @@
             <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/300x300?theme=thumb" alt="salada2 [300x300]" style="width: 300px; height: 300px;" src="../Public/assets/img/salada2.png" data-holder-rendered="true">
           </div>
         </div>
- 
+
+<script>
+  var loginButton = document.getElementById("login_button");
+  loginButton.textContent = "Sair"
+</script>

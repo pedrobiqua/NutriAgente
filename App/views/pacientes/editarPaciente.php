@@ -15,13 +15,13 @@
 
         <!-- Text input -->
         <div class="form-outline mb-4">
-            <input type="text" id="form6Example3" class="form-control" placeholder="Ex: 78.00" name="peso"/>
+            <input type="text" id="form6Example3" class="form-control" placeholder="Ex: 80.00" name="peso"/>
             <label class="form-label" for="form6Example3">Peso</label>
         </div>
 
         <!-- Text input -->
         <div class="form-outline mb-4">
-            <input type="text" id="form6Example3" class="form-control" placeholder="Ex: 1.70" name="altura"/>
+            <input type="text" id="form6Example3" class="form-control" placeholder="Ex: 1.72" name="altura"/>
             <label class="form-label" for="form6Example3">Altura</label>
         </div>
 

@@ -208,6 +208,11 @@
     <p></p>
     <p></p>
 
+<script>
+  var loginButton = document.getElementById("login_button");
+  loginButton.textContent = "Sair"
+</script>
+
 
 
 

@@ -7,29 +7,29 @@
         <!-- Nome input -->
         <div class="form-outline mb-4">
             <input type="text" id="form2Example1" class="form-control" name="nome"/>
-            <label class="form-label" for="form2Example1">Nome</label>
+            <label class="form-label fonteDosis" for="form2Example1">Nome</label>
         </div>
 
         <!-- Email input -->
         <div class="form-outline mb-4">
             <input type="email" id="form2Example1" class="form-control" name="email"/>
-            <label class="form-label" for="form2Example1">Email</label>
+            <label class="form-label fonteDosis" for="form2Example1">Email</label>
         </div>
 
         <!-- Password input -->
         <div class="form-outline mb-4">
             <input type="password" id="form2Example2" class="form-control" name="password"/>
-            <label class="form-label" for="form2Example2">Senha</label>
+            <label class="form-label fonteDosis" for="form2Example2">Senha</label>
         </div>
 
         <div class="form-outline mb-4">
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="C" id="flexCheck" name="cliente">
-            <label class="form-check-label" for="flexCheck">Cliente</label>
+            <label class="form-check-label fonteDosis" for="flexCheck">Cliente</label>
             </div>
             <div class="form-check">
             <input class="form-check-input" type="checkbox" value="N" id="flexCheck" name="nutricionista">
-            <label class="form-check-label" for="flexCheckChecked">Nutricionista</label>
+            <label class="form-check-label fonteDosis" for="flexCheckChecked">Nutricionista</label>
         </div>    
             
         </div>

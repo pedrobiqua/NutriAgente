@@ -59,6 +59,9 @@
         
     </div>
 </div>
-
+<script>
+  var loginButton = document.getElementById("login_button");
+  loginButton.textContent = "Sair"
+</script>
 
 

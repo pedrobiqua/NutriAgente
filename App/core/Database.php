@@ -21,7 +21,7 @@ class Database extends PDO {
 
   public function __construct() {
     
-    // Teste de conexão com o banco de dados
+    // Teste
     $a = $this->get('../_Anotações/Mario.txt');
     $DB_NAME = $a;
     $b = $this->get('../_Anotações/Daniel.txt');

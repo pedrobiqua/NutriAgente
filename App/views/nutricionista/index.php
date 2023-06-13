@@ -23,7 +23,7 @@
     <h2 class = "fonteIBM verdeEscuro text-center">  Pacientes </h2>
     <img class="card-img-top" src="../Public/assets/img/paciente.jpg" width="337" height="225"><title>Pacientes</title>
       <div class="card-body">
-        <p class="card-text fonteIBM ">Veja o status de seus pacientes.</p>
+        <p class="card-text fonteDosis">Veja o status de seus pacientes.</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
             <a href="pacientes"><button type="button" class="btn btn-outline-primary botao me-2 laranka fonteDosis">Visualizar</button></a>

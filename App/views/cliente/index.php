@@ -23,7 +23,7 @@
     <h2 class = "fonteIBM verdeEscuro text-center">Plano Alimentar</h2>
     <img class="card-img-top" src="../Public/assets/img/planoalimentar.jpg" width="337" height="225"><title>Plano Alimentar</title>
       <div class="card-body">
-        <p class="card-text fonteIBM ">Veja seu plano alimentar.</p>
+        <p class="card-text fonteDosis">Veja seu plano alimentar.</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
             <a href = "planoAlimentar"> <button type="button" class="btn btn-outline-primary botao me-2 verdeEscuro fonteDosis">Visualizar</button> </a>

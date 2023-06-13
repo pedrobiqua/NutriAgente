@@ -54,3 +54,7 @@
         <button type="submit" class="btn btn-outline-primary botao me-2 mb-4 verdeEscuro mb-4" name="adicionar">Adicionar</button>
     </form>
 </div>
+<script>
+  var loginButton = document.getElementById("login_button");
+  loginButton.textContent = "Sair"
+</script>
